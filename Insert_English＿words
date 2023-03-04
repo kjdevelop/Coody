@@ -1,0 +1,38 @@
+import pymongo
+
+client = pymongo.MongoClient("mongodb+srv://ze0966747312:a0966747312@cluster0.bf8bdil.mongodb.net/?retryWrites=true&w=majority",tls=True,tlsAllowInvalidCertificates=True)
+mydb=client["Coody_line_bot"]
+mycol=mydb["English_Words"]
+
+list=([{"Num1":1,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":2,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":3,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":4,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":5,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":6,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":7,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":8,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":9,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":10,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":11,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":12,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":13,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":14,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":15,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":16,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":17,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":18,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":19,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":20,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":21,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":22,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":23,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":24,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":25,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":26,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":27,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":28,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":29,"English":"abandon","Chinese":"遺棄；中止"},
+       {"Num1":30,"English":"abandon","Chinese":"遺棄；中止"},
+       ])
+mycol.insert_many(list)
